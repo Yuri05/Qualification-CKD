@@ -180,13 +180,13 @@ LAT1 was added as an influx transporter and its relative expression throughout t
 **Figure 3-1** demonstrates the simulated oral model PK profiles in a healthy population compared against observed Blum 1994 study data.<sup>34</sup>
 
 
-<a id="figure-3-2"></a>
+<a id="figure-3-1"></a>
 
 ![](images/003_section_Compounds/004_section_Gabapentin/005_section_gabapentin_healthy/1_time_profile_plot_Gabapentin_Blum_Healthy_400_mg_PO.png)
 
 
 
-**Figure 3-2: Simulation of the pharmacokinetics of Gabapentin after a single dose of 400 mg in healthy subjects. Observed data (circles) presented from Blum.**
+**Figure 3-1: Simulation of the pharmacokinetics of Gabapentin after a single dose of 400 mg in healthy subjects. Observed data (circles) presented from Blum.**
 
 
 <br>
@@ -206,26 +206,26 @@ A population with Stage 3 CKD was created according to the demographic parameter
 A population with Stage 4-5 CKD was created according to the demographic parameters of the target population presented in the study of Blum 1994<sup>34</sup> (eGFR 1-30 mL/min/1.73m<sup>2</sup>). Simulation of the pharmacokinetics of gabapentin after a single oral dose of 400 mg in this target population is presented in **Figure 3-3**
 
 
-<a id="figure-3-3"></a>
+<a id="figure-3-2"></a>
 
 ![](images/003_section_Compounds/004_section_Gabapentin/006_section_gabapentin_ckd/2_time_profile_plot_Gabapentin_Blum_CKD3_400_mg_PO.png)
 
 
 
-**Figure 3-3: Simulation of the pharmacokinetics of Gabapentin after a single dose of 400 mg in subjects with CKD. Observed data (circles) presented from Blum.**
+**Figure 3-2: Simulation of the pharmacokinetics of Gabapentin after a single dose of 400 mg in subjects with CKD. Observed data (circles) presented from Blum.**
 
 
 <br>
 <br>
 
 
-<a id="figure-3-4"></a>
+<a id="figure-3-3"></a>
 
 ![](images/003_section_Compounds/004_section_Gabapentin/006_section_gabapentin_ckd/3_time_profile_plot_Gabapentin_Blum_CKD5_400_mg_PO.png)
 
 
 
-**Figure 3-4: Simulation of the pharmacokinetics of Gabapentin after a single dose of 400 mg in subjects with CKD. Observed data (circles) presented from Blum.**
+**Figure 3-3: Simulation of the pharmacokinetics of Gabapentin after a single dose of 400 mg in subjects with CKD. Observed data (circles) presented from Blum.**
 
 
 <br>
@@ -308,13 +308,13 @@ The estimated fraction excreted to urine of 12% approximated the observed value 
 **Figure 3-4** shows the simulated oral model PK profiles in a healthy population compared against observed Roux 1980 study data.<sup>37</sup>
 
 
-<a id="figure-3-5"></a>
+<a id="figure-3-4"></a>
 
 ![](images/003_section_Compounds/007_section_Acebutolol/008_section_acebutolol_healthy/4_time_profile_plot_Acebutolol_Roux_Healthy_200_mg_PO.png)
 
 
 
-**Figure 3-5: Simulation of the pharmacokinetics of Acebutolol after a single dose of 200 mg in healthy subjects. Observed data (circles) presented from Roux.**
+**Figure 3-4: Simulation of the pharmacokinetics of Acebutolol after a single dose of 200 mg in healthy subjects. Observed data (circles) presented from Roux.**
 
 
 <br>
@@ -332,13 +332,13 @@ With the drug-specific parameters fixed, the healthy PBPK model was translated t
 A population with Stage 3-5 CKD was created according to the demographic parameters of the target population presented in the study of Roux 1980 (eGFR 6-56 mL/min/1.73m<sup>2</sup>). Simulation of the pharmacokinetics of acebutolol after a single oral dose of 200 mg in this target population is presented in **Figure 3-5**
 
 
-<a id="figure-3-6"></a>
+<a id="figure-3-5"></a>
 
 ![](images/003_section_Compounds/007_section_Acebutolol/009_section_acebutolol_ckd/5_time_profile_plot_Acebutolol_Roux_CKD_200_mg_PO.png)
 
 
 
-**Figure 3-6: Simulation of the pharmacokinetics of Acebutolol after a single dose of 200 mg in subjects with CKD. Observed data (circles) presented from Roux.**
+**Figure 3-5: Simulation of the pharmacokinetics of Acebutolol after a single dose of 200 mg in subjects with CKD. Observed data (circles) presented from Roux.**
 
 
 <br>
@@ -454,13 +454,26 @@ Atenolol is predominantly absorbed in the ileum.<sup>57-60</sup> The transporter
 **Figures 3-6, 3-7, and 3-8** demonstrate the simulated oral model PK profiles in a population compared against observed data from Wan 1979, Kirch 1981, and Sassard 1977, respectively.<sup>53,55,65</sup>.
 
 
-<a id="figure-3-7"></a>
+<a id="figure-3-6"></a>
 
 ![](images/003_section_Compounds/010_section_Atenolol/011_section_atenolol_healthy/6_time_profile_plot_Atenolol_Kirch_Healthy_100_mg_PO.png)
 
 
 
-**Figure 3-7: Simulation of the pharmacokinetics of Atenolol after multiple doses of 100 mg once daily in healthy subjects. Observed data (circles) presented from Kirch.**
+**Figure 3-6: Simulation of the pharmacokinetics of Atenolol after multiple doses of 100 mg once daily in healthy subjects. Observed data (circles) presented from Kirch.**
+
+
+<br>
+<br>
+
+
+<a id="figure-3-7"></a>
+
+![](images/003_section_Compounds/010_section_Atenolol/011_section_atenolol_healthy/10_time_profile_plot_Atenolol_Sassard_Healthy_100_mg_PO.png)
+
+
+
+**Figure 3-7: Simulation of the pharmacokinetics of Atenolol after a single dose of 100 mg in healthy subjects. Observed data (circles) presented from Sassard.**
 
 
 <br>
@@ -469,24 +482,11 @@ Atenolol is predominantly absorbed in the ileum.<sup>57-60</sup> The transporter
 
 <a id="figure-3-8"></a>
 
-![](images/003_section_Compounds/010_section_Atenolol/011_section_atenolol_healthy/10_time_profile_plot_Atenolol_Sassard_Healthy_100_mg_PO.png)
-
-
-
-**Figure 3-8: Simulation of the pharmacokinetics of Atenolol after a single dose of 100 mg in healthy subjects. Observed data (circles) presented from Sassard.**
-
-
-<br>
-<br>
-
-
-<a id="figure-3-9"></a>
-
 ![](images/003_section_Compounds/010_section_Atenolol/011_section_atenolol_healthy/13_time_profile_plot_Atenolol_Wan_Healthy_50mg_PO.png)
 
 
 
-**Figure 3-9: Simulation of the pharmacokinetics of Atenolol after a single dose of 50 mg in healthy subjects. Observed data (circles) presented from Wan.**
+**Figure 3-8: Simulation of the pharmacokinetics of Atenolol after a single dose of 50 mg in healthy subjects. Observed data (circles) presented from Wan.**
 
 
 <br>
@@ -514,9 +514,22 @@ A population with Stage 4-5 CKD was created according to the demographic paramet
 A population with Stage 3-4 CKD was created according to the demographic parameters of the target population presented in the study of Wan 1979<sup>55</sup> (eGFR 15-42 mL/min/1.73m<sup>2</sup>). Simulation of the pharmacokinetics of atenolol after a single oral dose of 50 mg in this target population is presented in Figure **3-14**.
 
 
-<a id="figure-3-10"></a>
+<a id="figure-3-9"></a>
 
 ![](images/003_section_Compounds/010_section_Atenolol/012_section_atenolol_ckd/7_time_profile_plot_Atenolol_Kirch_CKD3_100_mg_PO.png)
+
+
+
+**Figure 3-9: Simulation of the pharmacokinetics of Atenolol after multiple doses of 100 mg once daily in subjects with CKD. Observed data (circles) presented from Kirch.**
+
+
+<br>
+<br>
+
+
+<a id="figure-3-10"></a>
+
+![](images/003_section_Compounds/010_section_Atenolol/012_section_atenolol_ckd/8_time_profile_plot_Atenolol_Kirch_CKD4_100_mg_PO.png)
 
 
 
@@ -529,7 +542,7 @@ A population with Stage 3-4 CKD was created according to the demographic paramet
 
 <a id="figure-3-11"></a>
 
-![](images/003_section_Compounds/010_section_Atenolol/012_section_atenolol_ckd/8_time_profile_plot_Atenolol_Kirch_CKD4_100_mg_PO.png)
+![](images/003_section_Compounds/010_section_Atenolol/012_section_atenolol_ckd/9_time_profile_plot_Atenolol_Kirch_CKD5_100_mg_PO.png)
 
 
 
@@ -542,11 +555,11 @@ A population with Stage 3-4 CKD was created according to the demographic paramet
 
 <a id="figure-3-12"></a>
 
-![](images/003_section_Compounds/010_section_Atenolol/012_section_atenolol_ckd/9_time_profile_plot_Atenolol_Kirch_CKD5_100_mg_PO.png)
+![](images/003_section_Compounds/010_section_Atenolol/012_section_atenolol_ckd/11_time_profile_plot_Atenolol_Sassard_CKD3_100_mg_PO.png)
 
 
 
-**Figure 3-12: Simulation of the pharmacokinetics of Atenolol after multiple doses of 100 mg once daily in subjects with CKD. Observed data (circles) presented from Kirch.**
+**Figure 3-12: Simulation of the pharmacokinetics of Atenolol after a single dose of 100 mg in subjects with CKD. Observed data (circles) presented from Sassard.**
 
 
 <br>
@@ -555,7 +568,7 @@ A population with Stage 3-4 CKD was created according to the demographic paramet
 
 <a id="figure-3-13"></a>
 
-![](images/003_section_Compounds/010_section_Atenolol/012_section_atenolol_ckd/11_time_profile_plot_Atenolol_Sassard_CKD3_100_mg_PO.png)
+![](images/003_section_Compounds/010_section_Atenolol/012_section_atenolol_ckd/12_time_profile_plot_Atenolol_Sassard_CKD4_100_mg_PO.png)
 
 
 
@@ -568,24 +581,11 @@ A population with Stage 3-4 CKD was created according to the demographic paramet
 
 <a id="figure-3-14"></a>
 
-![](images/003_section_Compounds/010_section_Atenolol/012_section_atenolol_ckd/12_time_profile_plot_Atenolol_Sassard_CKD4_100_mg_PO.png)
-
-
-
-**Figure 3-14: Simulation of the pharmacokinetics of Atenolol after a single dose of 100 mg in subjects with CKD. Observed data (circles) presented from Sassard.**
-
-
-<br>
-<br>
-
-
-<a id="figure-3-15"></a>
-
 ![](images/003_section_Compounds/010_section_Atenolol/012_section_atenolol_ckd/14_time_profile_plot_Atenolol_Wan_CKD4_50_mg_PO.png)
 
 
 
-**Figure 3-15: Simulation of the pharmacokinetics of Atenolol after a single dose of 50 mg in subjects with CKD. Observed data (circles) presented from Wan.**
+**Figure 3-14: Simulation of the pharmacokinetics of Atenolol after a single dose of 50 mg in subjects with CKD. Observed data (circles) presented from Wan.**
 
 
 <br>
