@@ -1,0 +1,28 @@
+{
+  "Project": "Acebutolol",
+  "SnapshotFile": "C:\\SW-Dev\\00\\Qualification-CKD\\Qualification\\input\\Models/Acebutolol.json",
+  "OutputFolder": "C:/SW-Dev/00/Qualification-CKD/Qualification/re_input",
+  "ObservedDataFolder": "C:/SW-Dev/00/Qualification-CKD/Qualification/re_input\\ObservedData",
+  "InputsFolder": "C:/SW-Dev/00/Qualification-CKD/Qualification/re_input\\Inputs",
+  "MappingFile": "C:/SW-Dev/00/Qualification-CKD/Qualification/re_input\\temp\\Acebutolol\\mapping.json",
+  "TempFolder": "C:/SW-Dev/00/Qualification-CKD/Qualification/re_input\\temp\\Acebutolol",
+  "ReportConfigurationFile": "C:/SW-Dev/00/Qualification-CKD/Qualification/re_input\\report-configuration-plan.json",
+  "SimulationPlots": [
+    {
+      "Simulation": "Roux Healthy 200 mg PO",
+      "Project": "Acebutolol",
+      "SectionReference": "acebutolol_healthy"
+    },
+    {
+      "Simulation": "Roux CKD 200 mg PO",
+      "Project": "Acebutolol",
+      "SectionReference": "acebutolol_ckd"
+    }
+  ],
+  "Inputs": [],
+  "BuildingBlocks": [],
+  "Simulations": [
+    "Roux Healthy 200 mg PO",
+    "Roux CKD 200 mg PO"
+  ]
+}

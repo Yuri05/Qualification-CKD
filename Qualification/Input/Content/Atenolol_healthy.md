@@ -2,7 +2,7 @@
 
 ##### IV model
 
-**Table 3-5. Physicochemical properties and ADME of atenolol for the final IV model**
+**Table 3-5: Physicochemical properties and ADME of atenolol for the final IV model**
 
 | **Physicochemical properties**    |                             |
 |--|--|
@@ -27,7 +27,7 @@ The PK-Sim Standard and Rodgers and Rowland methods to calculate partition coeff
 
 **Table 3-6** presents the atenolol datasets used for building the IV model. The optimized values are presented in **Table 3-5**. A proportional error model was chosen (i.e., log scaling).
 
-**Table 3-6. Pharmacokinetic datasets for atenolol IV model construction**
+**Table 3-6: Pharmacokinetic datasets for atenolol IV model construction**
 
 | **Study**     | **Dose and administration**   | **Cohort**                       | **N** | **Age (years)**<sup>a</sup> | **Weight (kg)**<sup>a</sup>   |
 |---------------|-------------------------------|----------------------------------|-------|--------------------|----------------------|
@@ -48,7 +48,7 @@ The PK-Sim Standard and Rodgers and Rowland methods to calculate partition coeff
 
 The oral PBPK model for the atenolol tablet was developed using literature values for the dissolution profile and solubility (see **Table 3-7**). A Weibull function was used to describe the dissolution profile.
 
-**Table 3-7. Oral absorption parameters for the final atenolol oral model**
+**Table 3-7: Oral absorption parameters for the final atenolol oral model**
 
 |   |  |
 |--|--|
@@ -65,7 +65,7 @@ The oral PBPK model for the atenolol tablet was developed using literature value
 
 Atenolol is predominantly absorbed in the ileum.<sup>57-60</sup> The transporter-mediated uptake of atenolol is likely driven by the influx Plasma Membrane Monoamine Transporter (PMAT/SLC29A4) located on the apical membrane.<sup>61,62</sup> Segment-dependent absorption was modeled by adding a fast efflux transporter to the basolateral side of the lower ileum, referred to as Intestine 1. PMAT was added to the apical membrane of the lower ileum and its K<sub>m</sub> was fixed at 5000 µM to allow for linear kinetics while V<sub>max</sub> was optimized. Optimization of PMAT V<sub>max</sub> was carried out using a Monte Carlo approach to explore the parameter space.
 
-**Table 3-8. Pharmacokinetic datasets for atenolol oral model construction**
+**Table 3-8: Pharmacokinetic datasets for atenolol oral model construction**
 
 | **Study**        | **Dose and administration** | **Cohort**                             | **N** | **Age (years)**<sup>a</sup> | **Weight (kg)**<sup>a</sup>   |
 |------------------|-----------------------------|----------------------------------------|-------|--------------------|----------------------|

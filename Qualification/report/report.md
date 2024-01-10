@@ -6,10 +6,10 @@
 
 
 
-| Version                                         | 1.0-OSP11.0                                                   |
+| Version                                         | 2.2-OSP12.0                                                   |
 | ----------------------------------------------- | ------------------------------------------------------------ |
-| OSP Version                                     | 11.0                                                          |
-| Qualification Framework Version                 | 3.0                                                          |
+| OSP Version                                     | 12.0                                                          |
+| Qualification Framework Version                 | 1.0                                                          |
 
 
 
@@ -21,29 +21,26 @@ https://github.com/Open-Systems-Pharmacology/Qualification-CKD
 
 # Table of Contents
 
- * [1 Introduction](#Introduction)
- * [2 CKD Population Development](#ckd_population_development)
- * [3 Compounds](#Compounds)
-   * [3.1 Gabapentin](#Gabapentin)
-     * [3.1.1 Gabapentin in a Healthy Population](#gabapentin_healthy)
-     * [3.1.2 Gabapentin in a CKD Population](#gabapentin_ckd)
-   * [3.2 Acebutolol](#Acebutolol)
-     * [3.2.1 Acebutolol in a Healthy Population](#acebutolol_healthy)
-     * [3.2.2 Acebutolol in a CKD Population](#acebutolol_ckd)
-   * [3.3 Atenolol](#Atenolol)
-     * [3.3.1 Atenolol in a Healthy Population](#atenolol_healthy)
-     * [3.3.2 Atenolol in a CKD Population](#atenolol_ckd)
- * [4 Conclusion](#conclusion)
- * [5 References](#references)
+ * [1 Introduction ](#introduction)
+ * [2 CKD Population Development ](#ckd_population_development)
+ * [3 Compounds ](#compounds)
+   * [3.1 Gabapentin ](#gabapentin)
+     * [3.1.1 Gabapentin in a Healthy Population ](#gabapentin_healthy)
+     * [3.1.2 Gabapentin in a CKD Population ](#gabapentin_ckd)
+   * [3.2 Acebutolol ](#acebutolol)
+     * [3.2.1 Acebutolol in a Healthy Population ](#acebutolol_healthy)
+     * [3.2.2 Acebutolol in a CKD Population ](#acebutolol_ckd)
+   * [3.3 Atenolol ](#atenolol)
+     * [3.3.1 Atenolol in a Healthy Population ](#atenolol_healthy)
+     * [3.3.2 Atenolol in a CKD Population ](#atenolol_ckd)
+ * [4 Conclusion ](#conclusion)
+ * [5 References ](#references)
 
 
 
 
 
-<a id="Introduction"></a>
-
-
-# 1 Introduction
+# 1 Introduction <a id="introduction"></a>
 
 
 The presented qualification report performs simulations of drug disposition and pharmacokinetics in subjects with chronic kidney disease (CKD) to qualify the parameterization of the foundational anatomy and physiology parameters for virtual populations with CKD in the Open Systems Pharmacology (OSP) Suite.
@@ -58,23 +55,24 @@ This report replicates in part the evaluation of the parameterization done by Ma
 
 
 
-<a id="ckd_population_development"></a>
-
-
-# 2 CKD Population Development
+# 2 CKD Population Development <a id="ckd_population_development"></a>
 
 
 In order to generate a virtual population of subjects with CKD, the user must specify a target range for glomerular filtration rate (GFR) (minimum to maximum). PK-Sim will first generate a healthy population using the standard algorithm<sup>2</sup> - including the effects of aging as appropriate - and modify the physiological parameters of the simulated individuals to replicate a realistic CKD phenotype. The details of this process are outlined in **Figure 2-2**, with references to **Figure 2-1**, **Table 2-1** and **Table 2-2**. For a complete description, see Malik et al.<sup>1</sup>
+
+<a id="figure-2-1"></a>
 
 |![test image](images/fig1_paper.png)|
 |:-:|
 |       *Figure 2-1: Simulated kidney volumes (left) and simulated renal cortex perfusion rates (right) in a population of adults aged 30-70 years with varying degrees of renal impairment compared with observed data from the literature.<sup>3-8</sup> Diamonds represent individual data, whereas error bars represent the range in a study. In order to assign realistic physiological parameters to virtual individuals, quadratic equations for kidney volume and renal cortex perfusion rates were optimized to log-transformed data.*         |
 
+<a id="figure-2-2"></a>
+
 |![test image](images/fig2_paper.png)|
 |:-:|
 |       *Figure 2-2: Algorithm for generation of virtual individuals with CKD while accounting for the effects of aging*         |
 
-**Table 2-1. Hematocrit in Patients With Chronic Kidney Disease<sup>9, 10, 11</sup>**
+**Table 2-1: Hematocrit in Patients With Chronic Kidney Disease<sup>9, 10, 11</sup>**
 
 | **Creatinine Clearance (mL/min/1.73 m<sup>2</sup>)**    | **Men HCT (%)**  | **Women HCT (%)** |
 |---------------------------------------------------------|------------------|-------------------|
@@ -88,7 +86,7 @@ In order to generate a virtual population of subjects with CKD, the user must sp
 | Hemodialysis                                            | 31               | 29                |
 
 
-**Table 2-2. Fraction of Healthy Values (Normal Coefficient of Variation % ) in Chronic Kidney Disease Patients by Stage**
+**Table 2-2: Fraction of Healthy Values (Normal Coefficient of Variation % ) in Chronic Kidney Disease Patients by Stage**
 
 |Parameter                     |    Stage 3 (30-60 mL/min/1.73 m<sup>2</sup>)   |    Stage 4 (15-30 mL/min/1.73 m<sup>2</sup>)  |    Stage 5 (<15 mL/min/1.73 m<sup>2</sup>)   |   Dialysis   |
 | :--------------------------- | :-------------------: | :---------------------: | :--------------------------: | :-------------------------: |
@@ -101,10 +99,7 @@ In order to generate a virtual population of subjects with CKD, the user must sp
 
 
 
-<a id="Compounds"></a>
-
-
-# 3 Compounds
+# 3 Compounds <a id="compounds"></a>
 
 
 The method to generate virtual populations with CKD was qualified by testing its predictive performance when used in combination with PBPK models for healthy subjects in order to predict the pharmacokinetics of drugs in patients with CKD from literature.
@@ -117,10 +112,7 @@ Each subsection that follows will contain an introduction to the test compound, 
 
 
 
-<a id="Gabapentin"></a>
-
-
-## 3.1 Gabapentin
+## 3.1 Gabapentin <a id="gabapentin"></a>
 
 
 Gabapentin is structurally related to the neurotransmitter, gamma aminobutyric acid (GABA). In adults, it is indicated for the management of post-herpetic neuralgia; and in adults and children 3 years and older with epilepsy, it is used as an adjunctive therapy in treating partial onset seizures with and without secondary generalization.
@@ -133,15 +125,12 @@ Gabapentin is not metabolized and completely renally cleared as unchanged drug b
 
 
 
-<a id="gabapentin_healthy"></a>
-
-
-### 3.1.1 Gabapentin in a Healthy Population
+### 3.1.1 Gabapentin in a Healthy Population <a id="gabapentin_healthy"></a>
 
 
 **Table 3-1** presents the drug-specific parameters of gabapentin and the values used for the oral administration model. Parameter optimization was carried out in PK-Sim using a Monte Carlo approach for exploring the parameter space, using the datasets summarized in **Table 3-2**.
 
-**Table 3-1. Physicochemical properties and ADME of gabapentin for the final oral model**
+**Table 3-1: Physicochemical properties and ADME of gabapentin for the final oral model**
 
 | **Physicochemical properties**    |                             |
 |--|--|
@@ -170,7 +159,7 @@ LAT1 was added as an influx transporter and its relative expression throughout t
 
 **Table 3-2** presents the gabapentin datasets used for building the oral model. Lipophilicity was optimized to -0.08 Log Units. Cell line K<sub>m</sub> values of LAT1 were found in the range of 200-500 uM<sup>31</sup> and this value was optimized in order to accurately recreate the nonlinear absorption of gabapentin. V<sub>max</sub> was also optimized to the oral datasets.
 
-**Table 3-2. Pharmacokinetic datasets for gabapentin oral model construction**
+**Table 3-2: Pharmacokinetic datasets for gabapentin oral model construction**
 
 | **Study**              | **Dose and administration** | **Cohort**                    | **N** | **Age (years)**<sup>a</sup> | **Weight (kg)**<sup>a</sup> |
 |------------------------|-----------------------------|-------------------------------|-------|--------------------|--------------------|
@@ -191,11 +180,11 @@ LAT1 was added as an influx transporter and its relative expression throughout t
 **Figure 3-1** demonstrates the simulated oral model PK profiles in a healthy population compared against observed Blum 1994 study data.<sup>34</sup>
 
 
+<a id="figure-3-1"></a>
+
 ![](images/003_section_Compounds/004_section_Gabapentin/005_section_gabapentin_healthy/1_time_profile_plot_Gabapentin_Blum_Healthy_400_mg_PO.png)
 
 
-
-<a id="figure-3-1"></a>
 
 **Figure 3-1: Simulation of the pharmacokinetics of Gabapentin after a single dose of 400 mg in healthy subjects. Observed data (circles) presented from Blum.**
 
@@ -207,10 +196,7 @@ LAT1 was added as an influx transporter and its relative expression throughout t
 
 
 
-<a id="gabapentin_ckd"></a>
-
-
-### 3.1.2 Gabapentin in a CKD Population
+### 3.1.2 Gabapentin in a CKD Population <a id="gabapentin_ckd"></a>
 
 
 With the drug-specific parameters fixed, the healthy PBPK model was translated to a CKD PBPK model CKD according to the defined method. 
@@ -220,11 +206,11 @@ A population with Stage 3 CKD was created according to the demographic parameter
 A population with Stage 4-5 CKD was created according to the demographic parameters of the target population presented in the study of Blum 1994<sup>34</sup> (eGFR 1-30 mL/min/1.73m<sup>2</sup>). Simulation of the pharmacokinetics of gabapentin after a single oral dose of 400 mg in this target population is presented in **Figure 3-3**
 
 
+<a id="figure-3-2"></a>
+
 ![](images/003_section_Compounds/004_section_Gabapentin/006_section_gabapentin_ckd/2_time_profile_plot_Gabapentin_Blum_CKD3_400_mg_PO.png)
 
 
-
-<a id="figure-3-2"></a>
 
 **Figure 3-2: Simulation of the pharmacokinetics of Gabapentin after a single dose of 400 mg in subjects with CKD. Observed data (circles) presented from Blum.**
 
@@ -233,11 +219,11 @@ A population with Stage 4-5 CKD was created according to the demographic paramet
 <br>
 
 
+<a id="figure-3-3"></a>
+
 ![](images/003_section_Compounds/004_section_Gabapentin/006_section_gabapentin_ckd/3_time_profile_plot_Gabapentin_Blum_CKD5_400_mg_PO.png)
 
 
-
-<a id="figure-3-3"></a>
 
 **Figure 3-3: Simulation of the pharmacokinetics of Gabapentin after a single dose of 400 mg in subjects with CKD. Observed data (circles) presented from Blum.**
 
@@ -249,10 +235,7 @@ A population with Stage 4-5 CKD was created according to the demographic paramet
 
 
 
-<a id="Acebutolol"></a>
-
-
-## 3.2 Acebutolol
+## 3.2 Acebutolol <a id="acebutolol"></a>
 
 
 Acebutolol is a cardioselective beta-blocker with mild intrinsic sympathomimetic activity indicated for hypertension and ventricular arrhythmias. It is administered orally and classified as a BCS Class 3 drug. Acebutolol is well absorbed from the gastrointestinal tract with an absolute bioavailability of approximately 40%. Its elimination half life is 3–4 hours.<sup>35</sup>
@@ -263,15 +246,12 @@ Acebutolol undergoes extensive first pass metabolism in the liver by the two enz
 
 
 
-<a id="acebutolol_healthy"></a>
-
-
-### 3.2.1 Acebutolol in a Healthy Population
+### 3.2.1 Acebutolol in a Healthy Population <a id="acebutolol_healthy"></a>
 
 
 **Table 3-3** presents the drug-specific parameters of acebutolol and the values used for the combined IV-oral model. Parameter optimization was carried out in PK-Sim using a Monte Carlo approach for exploring the parameter space, using the datasets summarized in **Table 3-4**.
 
-**Table 3-3. Physicochemical properties and ADME of acebutolol for the final IV-oral model**
+**Table 3-3: Physicochemical properties and ADME of acebutolol for the final IV-oral model**
 
 | **Physicochemical properties**    |                             |
 |--|--|
@@ -311,7 +291,7 @@ The acebutolol oral formulation was developed assuming high solubility and fast 
 
 The estimated fraction excreted to urine of 12% approximated the observed value of 15% measured at 70 hours after oral administration.<sup>37,42,43</sup> In contrast, the estimated fraction excreted to urine of 21% slightly underestimated the observed value of 35% measured at 48 hours after IV bolus administration.<sup>35,41</sup>
 
-**Table 3-4. Pharmacokinetic datasets for acebutolol IV-oral model construction**
+**Table 3-4: Pharmacokinetic datasets for acebutolol IV-oral model construction**
 
 | **Study**      | **Dose and administration** | **Cohort**     | **N** | **Age (years)**<sup>a</sup> | **Weight (kg)**<sup>a</sup> |
 |----------------|-----------------------------|----------------|-------|--------------------|--------------------|
@@ -328,11 +308,11 @@ The estimated fraction excreted to urine of 12% approximated the observed value 
 **Figure 3-4** shows the simulated oral model PK profiles in a healthy population compared against observed Roux 1980 study data.<sup>37</sup>
 
 
+<a id="figure-3-4"></a>
+
 ![](images/003_section_Compounds/007_section_Acebutolol/008_section_acebutolol_healthy/4_time_profile_plot_Acebutolol_Roux_Healthy_200_mg_PO.png)
 
 
-
-<a id="figure-3-4"></a>
 
 **Figure 3-4: Simulation of the pharmacokinetics of Acebutolol after a single dose of 200 mg in healthy subjects. Observed data (circles) presented from Roux.**
 
@@ -344,10 +324,7 @@ The estimated fraction excreted to urine of 12% approximated the observed value 
 
 
 
-<a id="acebutolol_ckd"></a>
-
-
-### 3.2.2 Acebutolol in a CKD Population
+### 3.2.2 Acebutolol in a CKD Population <a id="acebutolol_ckd"></a>
 
 
 With the drug-specific parameters fixed, the healthy PBPK model was translated to a CKD PBPK model CKD according to the defined method. 
@@ -355,11 +332,11 @@ With the drug-specific parameters fixed, the healthy PBPK model was translated t
 A population with Stage 3-5 CKD was created according to the demographic parameters of the target population presented in the study of Roux 1980 (eGFR 6-56 mL/min/1.73m<sup>2</sup>). Simulation of the pharmacokinetics of acebutolol after a single oral dose of 200 mg in this target population is presented in **Figure 3-5**
 
 
+<a id="figure-3-5"></a>
+
 ![](images/003_section_Compounds/007_section_Acebutolol/009_section_acebutolol_ckd/5_time_profile_plot_Acebutolol_Roux_CKD_200_mg_PO.png)
 
 
-
-<a id="figure-3-5"></a>
 
 **Figure 3-5: Simulation of the pharmacokinetics of Acebutolol after a single dose of 200 mg in subjects with CKD. Observed data (circles) presented from Roux.**
 
@@ -371,10 +348,7 @@ A population with Stage 3-5 CKD was created according to the demographic paramet
 
 
 
-<a id="Atenolol"></a>
-
-
-## 3.3 Atenolol
+## 3.3 Atenolol <a id="atenolol"></a>
 
 
 Atenolol is a beta-selective beta-adrenergic receptor blocking agent. It is indicated for hypertension, angina pectoris due to coronary atherosclerosis, and acute myocardial infarction. Atenolol is 6-16% bound to proteins in plasma.<sup>47</sup> The elimination half-life of atenolol from plasma is 6-7 hours in healthy adults.
@@ -387,17 +361,14 @@ Atenolol is a substrate of the organic cation transporter 2 (OCT2/SLC22A2) on th
 
 
 
-<a id="atenolol_healthy"></a>
-
-
-### 3.3.1 Atenolol in a Healthy Population
+### 3.3.1 Atenolol in a Healthy Population <a id="atenolol_healthy"></a>
 
 
 **Table 3-5** and **Table 3-7** present the drug-specific parameters of atenolol and the values used for the IV and Oral administration models. Parameter optimization was carried out in PK-Sim using a Monte Carlo approach for exploring the parameter space, using the datasets summarized in **Table 3-6** and **Table 3-8**.
 
 ##### IV model
 
-**Table 3-5. Physicochemical properties and ADME of atenolol for the final IV model**
+**Table 3-5: Physicochemical properties and ADME of atenolol for the final IV model**
 
 | **Physicochemical properties**    |                             |
 |--|--|
@@ -422,7 +393,7 @@ The PK-Sim Standard and Rodgers and Rowland methods to calculate partition coeff
 
 **Table 3-6** presents the atenolol datasets used for building the IV model. The optimized values are presented in **Table 3-5**. A proportional error model was chosen (i.e., log scaling).
 
-**Table 3-6. Pharmacokinetic datasets for atenolol IV model construction**
+**Table 3-6: Pharmacokinetic datasets for atenolol IV model construction**
 
 | **Study**     | **Dose and administration**   | **Cohort**                       | **N** | **Age (years)**<sup>a</sup> | **Weight (kg)**<sup>a</sup>   |
 |---------------|-------------------------------|----------------------------------|-------|--------------------|----------------------|
@@ -443,7 +414,7 @@ The PK-Sim Standard and Rodgers and Rowland methods to calculate partition coeff
 
 The oral PBPK model for the atenolol tablet was developed using literature values for the dissolution profile and solubility (see **Table 3-7**). A Weibull function was used to describe the dissolution profile.
 
-**Table 3-7. Oral absorption parameters for the final atenolol oral model**
+**Table 3-7: Oral absorption parameters for the final atenolol oral model**
 
 |   |  |
 |--|--|
@@ -460,7 +431,7 @@ The oral PBPK model for the atenolol tablet was developed using literature value
 
 Atenolol is predominantly absorbed in the ileum.<sup>57-60</sup> The transporter-mediated uptake of atenolol is likely driven by the influx Plasma Membrane Monoamine Transporter (PMAT/SLC29A4) located on the apical membrane.<sup>61,62</sup> Segment-dependent absorption was modeled by adding a fast efflux transporter to the basolateral side of the lower ileum, referred to as Intestine 1. PMAT was added to the apical membrane of the lower ileum and its K<sub>m</sub> was fixed at 5000 µM to allow for linear kinetics while V<sub>max</sub> was optimized. Optimization of PMAT V<sub>max</sub> was carried out using a Monte Carlo approach to explore the parameter space.
 
-**Table 3-8. Pharmacokinetic datasets for atenolol oral model construction**
+**Table 3-8: Pharmacokinetic datasets for atenolol oral model construction**
 
 | **Study**        | **Dose and administration** | **Cohort**                             | **N** | **Age (years)**<sup>a</sup> | **Weight (kg)**<sup>a</sup>   |
 |------------------|-----------------------------|----------------------------------------|-------|--------------------|----------------------|
@@ -483,11 +454,11 @@ Atenolol is predominantly absorbed in the ileum.<sup>57-60</sup> The transporter
 **Figures 3-6, 3-7, and 3-8** demonstrate the simulated oral model PK profiles in a population compared against observed data from Wan 1979, Kirch 1981, and Sassard 1977, respectively.<sup>53,55,65</sup>.
 
 
+<a id="figure-3-6"></a>
+
 ![](images/003_section_Compounds/010_section_Atenolol/011_section_atenolol_healthy/6_time_profile_plot_Atenolol_Kirch_Healthy_100_mg_PO.png)
 
 
-
-<a id="figure-3-6"></a>
 
 **Figure 3-6: Simulation of the pharmacokinetics of Atenolol after multiple doses of 100 mg once daily in healthy subjects. Observed data (circles) presented from Kirch.**
 
@@ -496,11 +467,11 @@ Atenolol is predominantly absorbed in the ileum.<sup>57-60</sup> The transporter
 <br>
 
 
+<a id="figure-3-7"></a>
+
 ![](images/003_section_Compounds/010_section_Atenolol/011_section_atenolol_healthy/10_time_profile_plot_Atenolol_Sassard_Healthy_100_mg_PO.png)
 
 
-
-<a id="figure-3-7"></a>
 
 **Figure 3-7: Simulation of the pharmacokinetics of Atenolol after a single dose of 100 mg in healthy subjects. Observed data (circles) presented from Sassard.**
 
@@ -509,11 +480,11 @@ Atenolol is predominantly absorbed in the ileum.<sup>57-60</sup> The transporter
 <br>
 
 
+<a id="figure-3-8"></a>
+
 ![](images/003_section_Compounds/010_section_Atenolol/011_section_atenolol_healthy/13_time_profile_plot_Atenolol_Wan_Healthy_50mg_PO.png)
 
 
-
-<a id="figure-3-8"></a>
 
 **Figure 3-8: Simulation of the pharmacokinetics of Atenolol after a single dose of 50 mg in healthy subjects. Observed data (circles) presented from Wan.**
 
@@ -525,10 +496,7 @@ Atenolol is predominantly absorbed in the ileum.<sup>57-60</sup> The transporter
 
 
 
-<a id="atenolol_ckd"></a>
-
-
-### 3.3.2 Atenolol in a CKD Population
+### 3.3.2 Atenolol in a CKD Population <a id="atenolol_ckd"></a>
 
 
 With the drug-specific parameters fixed, the healthy PBPK model was translated to a CKD PBPK model CKD according to the defined method. 
@@ -546,11 +514,11 @@ A population with Stage 4-5 CKD was created according to the demographic paramet
 A population with Stage 3-4 CKD was created according to the demographic parameters of the target population presented in the study of Wan 1979<sup>55</sup> (eGFR 15-42 mL/min/1.73m<sup>2</sup>). Simulation of the pharmacokinetics of atenolol after a single oral dose of 50 mg in this target population is presented in Figure **3-14**.
 
 
+<a id="figure-3-9"></a>
+
 ![](images/003_section_Compounds/010_section_Atenolol/012_section_atenolol_ckd/7_time_profile_plot_Atenolol_Kirch_CKD3_100_mg_PO.png)
 
 
-
-<a id="figure-3-9"></a>
 
 **Figure 3-9: Simulation of the pharmacokinetics of Atenolol after multiple doses of 100 mg once daily in subjects with CKD. Observed data (circles) presented from Kirch.**
 
@@ -559,11 +527,11 @@ A population with Stage 3-4 CKD was created according to the demographic paramet
 <br>
 
 
+<a id="figure-3-10"></a>
+
 ![](images/003_section_Compounds/010_section_Atenolol/012_section_atenolol_ckd/8_time_profile_plot_Atenolol_Kirch_CKD4_100_mg_PO.png)
 
 
-
-<a id="figure-3-10"></a>
 
 **Figure 3-10: Simulation of the pharmacokinetics of Atenolol after multiple doses of 100 mg once daily in subjects with CKD. Observed data (circles) presented from Kirch.**
 
@@ -572,11 +540,11 @@ A population with Stage 3-4 CKD was created according to the demographic paramet
 <br>
 
 
+<a id="figure-3-11"></a>
+
 ![](images/003_section_Compounds/010_section_Atenolol/012_section_atenolol_ckd/9_time_profile_plot_Atenolol_Kirch_CKD5_100_mg_PO.png)
 
 
-
-<a id="figure-3-11"></a>
 
 **Figure 3-11: Simulation of the pharmacokinetics of Atenolol after multiple doses of 100 mg once daily in subjects with CKD. Observed data (circles) presented from Kirch.**
 
@@ -585,11 +553,11 @@ A population with Stage 3-4 CKD was created according to the demographic paramet
 <br>
 
 
+<a id="figure-3-12"></a>
+
 ![](images/003_section_Compounds/010_section_Atenolol/012_section_atenolol_ckd/11_time_profile_plot_Atenolol_Sassard_CKD3_100_mg_PO.png)
 
 
-
-<a id="figure-3-12"></a>
 
 **Figure 3-12: Simulation of the pharmacokinetics of Atenolol after a single dose of 100 mg in subjects with CKD. Observed data (circles) presented from Sassard.**
 
@@ -598,11 +566,11 @@ A population with Stage 3-4 CKD was created according to the demographic paramet
 <br>
 
 
+<a id="figure-3-13"></a>
+
 ![](images/003_section_Compounds/010_section_Atenolol/012_section_atenolol_ckd/12_time_profile_plot_Atenolol_Sassard_CKD4_100_mg_PO.png)
 
 
-
-<a id="figure-3-13"></a>
 
 **Figure 3-13: Simulation of the pharmacokinetics of Atenolol after a single dose of 100 mg in subjects with CKD. Observed data (circles) presented from Sassard.**
 
@@ -611,11 +579,11 @@ A population with Stage 3-4 CKD was created according to the demographic paramet
 <br>
 
 
+<a id="figure-3-14"></a>
+
 ![](images/003_section_Compounds/010_section_Atenolol/012_section_atenolol_ckd/14_time_profile_plot_Atenolol_Wan_CKD4_50_mg_PO.png)
 
 
-
-<a id="figure-3-14"></a>
 
 **Figure 3-14: Simulation of the pharmacokinetics of Atenolol after a single dose of 50 mg in subjects with CKD. Observed data (circles) presented from Wan.**
 
@@ -627,10 +595,7 @@ A population with Stage 3-4 CKD was created according to the demographic paramet
 
 
 
-<a id="conclusion"></a>
-
-
-# 4 Conclusion
+# 4 Conclusion <a id="conclusion"></a>
 
 
 Success of the virtual population with the test models for predicting drug pharmacokinetics in subjects with CKD qualifies the method to support the use of the population for PBPK-CKD modeling.
@@ -641,10 +606,7 @@ The evaluation was performed for compounds with significant renal elimination, f
 
 
 
-<a id="references"></a>
-
-
-# 5 References
+# 5 References <a id="references"></a>
 
 
 1. Malik PR, Yeung CH, Ismaeil S, Advani U, Djie S, Edginton AN. A physiological approach to pharmacokinetics in chronic kidney disease. J Clin Pharmacol. 2020 Nov;60:S52-62.

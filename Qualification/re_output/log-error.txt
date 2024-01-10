@@ -1,0 +1,54 @@
+10/01/2024 - 12:22:22
+NaNs produced
+Configuration Plan Information:
+Project: Acebutolol
+Simulation: Roux Healthy 200 mg PO
+SectionReference: acebutolol_healthy
+Plot: list(...)
+PlotNumber: 3 (json numbering starting at 0);  4 (actual plot index)
+
+10/01/2024 - 12:22:26
+NaNs produced
+Configuration Plan Information:
+Project: Acebutolol
+Simulation: Roux CKD 200 mg PO
+SectionReference: acebutolol_ckd
+Plot: list(...)
+PlotNumber: 4 (json numbering starting at 0);  5 (actual plot index)
+
+10/01/2024 - 12:23:02
+NaNs produced
+Configuration Plan Information:
+Project: Atenolol
+Simulation: Wan Healthy 50mg PO
+SectionReference: atenolol_healthy
+Plot: list(...)
+PlotNumber: 12 (json numbering starting at 0);  13 (actual plot index)
+
+10/01/2024 - 12:23:05
+NaNs produced
+Configuration Plan Information:
+Project: Atenolol
+Simulation: Wan CKD4 50 mg PO
+SectionReference: atenolol_ckd
+Plot: list(...)
+PlotNumber: 13 (json numbering starting at 0);  14 (actual plot index)
+
+10/01/2024 - 12:23:06
+font family not found in Windows font database
+10/01/2024 - 12:23:12
+NaNs produced
+10/01/2024 - 12:23:13
+NaNs produced
+10/01/2024 - 12:23:14
+NaNs produced
+10/01/2024 - 12:23:15
+NaNs produced
+10/01/2024 - 12:23:31
+NaNs produced
+10/01/2024 - 12:23:32
+NaNs produced
+10/01/2024 - 12:23:33
+NaNs produced
+10/01/2024 - 12:23:34
+NaNs produced
