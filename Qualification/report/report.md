@@ -72,7 +72,7 @@ In order to generate a virtual population of subjects with CKD, the user must sp
 |:-:|
 |       *Figure 2-2: Algorithm for generation of virtual individuals with CKD while accounting for the effects of aging*         |
 
-**Table 2-1. Hematocrit in Patients With Chronic Kidney Disease<sup>9, 10, 11</sup>**
+**Table 2-1: Hematocrit in Patients With Chronic Kidney Disease<sup>9, 10, 11</sup>**
 
 | **Creatinine Clearance (mL/min/1.73 m<sup>2</sup>)**    | **Men HCT (%)**  | **Women HCT (%)** |
 |---------------------------------------------------------|------------------|-------------------|
@@ -86,7 +86,7 @@ In order to generate a virtual population of subjects with CKD, the user must sp
 | Hemodialysis                                            | 31               | 29                |
 
 
-**Table 2-2. Fraction of Healthy Values (Normal Coefficient of Variation % ) in Chronic Kidney Disease Patients by Stage**
+**Table 2-2: Fraction of Healthy Values (Normal Coefficient of Variation % ) in Chronic Kidney Disease Patients by Stage**
 
 |Parameter                     |    Stage 3 (30-60 mL/min/1.73 m<sup>2</sup>)   |    Stage 4 (15-30 mL/min/1.73 m<sup>2</sup>)  |    Stage 5 (<15 mL/min/1.73 m<sup>2</sup>)   |   Dialysis   |
 | :--------------------------- | :-------------------: | :---------------------: | :--------------------------: | :-------------------------: |
@@ -130,7 +130,7 @@ Gabapentin is not metabolized and completely renally cleared as unchanged drug b
 
 **Table 3-1** presents the drug-specific parameters of gabapentin and the values used for the oral administration model. Parameter optimization was carried out in PK-Sim using a Monte Carlo approach for exploring the parameter space, using the datasets summarized in **Table 3-2**.
 
-**Table 3-1. Physicochemical properties and ADME of gabapentin for the final oral model**
+**Table 3-1: Physicochemical properties and ADME of gabapentin for the final oral model**
 
 | **Physicochemical properties**    |                             |
 |--|--|
@@ -159,7 +159,7 @@ LAT1 was added as an influx transporter and its relative expression throughout t
 
 **Table 3-2** presents the gabapentin datasets used for building the oral model. Lipophilicity was optimized to -0.08 Log Units. Cell line K<sub>m</sub> values of LAT1 were found in the range of 200-500 uM<sup>31</sup> and this value was optimized in order to accurately recreate the nonlinear absorption of gabapentin. V<sub>max</sub> was also optimized to the oral datasets.
 
-**Table 3-2. Pharmacokinetic datasets for gabapentin oral model construction**
+**Table 3-2: Pharmacokinetic datasets for gabapentin oral model construction**
 
 | **Study**              | **Dose and administration** | **Cohort**                    | **N** | **Age (years)**<sup>a</sup> | **Weight (kg)**<sup>a</sup> |
 |------------------------|-----------------------------|-------------------------------|-------|--------------------|--------------------|
@@ -251,7 +251,7 @@ Acebutolol undergoes extensive first pass metabolism in the liver by the two enz
 
 **Table 3-3** presents the drug-specific parameters of acebutolol and the values used for the combined IV-oral model. Parameter optimization was carried out in PK-Sim using a Monte Carlo approach for exploring the parameter space, using the datasets summarized in **Table 3-4**.
 
-**Table 3-3. Physicochemical properties and ADME of acebutolol for the final IV-oral model**
+**Table 3-3: Physicochemical properties and ADME of acebutolol for the final IV-oral model**
 
 | **Physicochemical properties**    |                             |
 |--|--|
@@ -291,7 +291,7 @@ The acebutolol oral formulation was developed assuming high solubility and fast 
 
 The estimated fraction excreted to urine of 12% approximated the observed value of 15% measured at 70 hours after oral administration.<sup>37,42,43</sup> In contrast, the estimated fraction excreted to urine of 21% slightly underestimated the observed value of 35% measured at 48 hours after IV bolus administration.<sup>35,41</sup>
 
-**Table 3-4. Pharmacokinetic datasets for acebutolol IV-oral model construction**
+**Table 3-4: Pharmacokinetic datasets for acebutolol IV-oral model construction**
 
 | **Study**      | **Dose and administration** | **Cohort**     | **N** | **Age (years)**<sup>a</sup> | **Weight (kg)**<sup>a</sup> |
 |----------------|-----------------------------|----------------|-------|--------------------|--------------------|
@@ -368,7 +368,7 @@ Atenolol is a substrate of the organic cation transporter 2 (OCT2/SLC22A2) on th
 
 ##### IV model
 
-**Table 3-5. Physicochemical properties and ADME of atenolol for the final IV model**
+**Table 3-5: Physicochemical properties and ADME of atenolol for the final IV model**
 
 | **Physicochemical properties**    |                             |
 |--|--|
@@ -393,7 +393,7 @@ The PK-Sim Standard and Rodgers and Rowland methods to calculate partition coeff
 
 **Table 3-6** presents the atenolol datasets used for building the IV model. The optimized values are presented in **Table 3-5**. A proportional error model was chosen (i.e., log scaling).
 
-**Table 3-6. Pharmacokinetic datasets for atenolol IV model construction**
+**Table 3-6: Pharmacokinetic datasets for atenolol IV model construction**
 
 | **Study**     | **Dose and administration**   | **Cohort**                       | **N** | **Age (years)**<sup>a</sup> | **Weight (kg)**<sup>a</sup>   |
 |---------------|-------------------------------|----------------------------------|-------|--------------------|----------------------|
@@ -414,7 +414,7 @@ The PK-Sim Standard and Rodgers and Rowland methods to calculate partition coeff
 
 The oral PBPK model for the atenolol tablet was developed using literature values for the dissolution profile and solubility (see **Table 3-7**). A Weibull function was used to describe the dissolution profile.
 
-**Table 3-7. Oral absorption parameters for the final atenolol oral model**
+**Table 3-7: Oral absorption parameters for the final atenolol oral model**
 
 |   |  |
 |--|--|
@@ -431,7 +431,7 @@ The oral PBPK model for the atenolol tablet was developed using literature value
 
 Atenolol is predominantly absorbed in the ileum.<sup>57-60</sup> The transporter-mediated uptake of atenolol is likely driven by the influx Plasma Membrane Monoamine Transporter (PMAT/SLC29A4) located on the apical membrane.<sup>61,62</sup> Segment-dependent absorption was modeled by adding a fast efflux transporter to the basolateral side of the lower ileum, referred to as Intestine 1. PMAT was added to the apical membrane of the lower ileum and its K<sub>m</sub> was fixed at 5000 µM to allow for linear kinetics while V<sub>max</sub> was optimized. Optimization of PMAT V<sub>max</sub> was carried out using a Monte Carlo approach to explore the parameter space.
 
-**Table 3-8. Pharmacokinetic datasets for atenolol oral model construction**
+**Table 3-8: Pharmacokinetic datasets for atenolol oral model construction**
 
 | **Study**        | **Dose and administration** | **Cohort**                             | **N** | **Age (years)**<sup>a</sup> | **Weight (kg)**<sup>a</sup>   |
 |------------------|-----------------------------|----------------------------------------|-------|--------------------|----------------------|
