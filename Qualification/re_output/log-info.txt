@@ -1,0 +1,29 @@
+10/01/2024 - 12:10:38
+Loading Simulations onto Qualification Workflow
+10/01/2024 - 12:11:20
+Simulations loading completed in 0.7 min
+10/01/2024 - 12:11:20
+Reporting Engine Information:
+Date: 10/01/2024 - 12:11:20
+User Information:
+Computer Name: XXXXXXX
+User: XXXXXXX
+Login: XXXXXXX
+System is NOT validated
+System versions:
+R version: R version 4.2.2 (2022-10-31 ucrt)
+OSP Suite Package version: 12.0.424
+OSP Reporting Engine version: 2.2.315
+tlf version: 1.5.158
+10/01/2024 - 12:11:21
+Starting run of Qualification Workflow
+10/01/2024 - 12:11:21
+Starting run of Simulation task
+10/01/2024 - 12:22:05
+Simulation task completed in 10.7 min
+10/01/2024 - 12:22:05
+Starting run of Plot Time Profiles task
+10/01/2024 - 12:23:35
+Plot Time Profiles task completed in 1.5 min
+10/01/2024 - 12:23:40
+Qualification Workflow completed in 12.3 min
