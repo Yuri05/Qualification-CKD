@@ -1,6 +1,6 @@
 **Table 3-3** presents the drug-specific parameters of acebutolol and the values used for the combined IV-oral model. Parameter optimization was carried out in PK-Sim using a Monte Carlo approach for exploring the parameter space, using the datasets summarized in **Table 3-4**.
 
-**Table 3-3. Physicochemical properties and ADME of acebutolol for the final IV-oral model**
+**Table 3-3: Physicochemical properties and ADME of acebutolol for the final IV-oral model**
 
 | **Physicochemical properties**    |                             |
 |--|--|
@@ -40,7 +40,7 @@ The acebutolol oral formulation was developed assuming high solubility and fast 
 
 The estimated fraction excreted to urine of 12% approximated the observed value of 15% measured at 70 hours after oral administration.<sup>37,42,43</sup> In contrast, the estimated fraction excreted to urine of 21% slightly underestimated the observed value of 35% measured at 48 hours after IV bolus administration.<sup>35,41</sup>
 
-**Table 3-4. Pharmacokinetic datasets for acebutolol IV-oral model construction**
+**Table 3-4: Pharmacokinetic datasets for acebutolol IV-oral model construction**
 
 | **Study**      | **Dose and administration** | **Cohort**     | **N** | **Age (years)**<sup>a</sup> | **Weight (kg)**<sup>a</sup> |
 |----------------|-----------------------------|----------------|-------|--------------------|--------------------|

@@ -1,6 +1,6 @@
 **Table 3-1** presents the drug-specific parameters of gabapentin and the values used for the oral administration model. Parameter optimization was carried out in PK-Sim using a Monte Carlo approach for exploring the parameter space, using the datasets summarized in **Table 3-2**.
 
-**Table 3-1. Physicochemical properties and ADME of gabapentin for the final oral model**
+**Table 3-1: Physicochemical properties and ADME of gabapentin for the final oral model**
 
 | **Physicochemical properties**    |                             |
 |--|--|
@@ -29,7 +29,7 @@ LAT1 was added as an influx transporter and its relative expression throughout t
 
 **Table 3-2** presents the gabapentin datasets used for building the oral model. Lipophilicity was optimized to -0.08 Log Units. Cell line K<sub>m</sub> values of LAT1 were found in the range of 200-500 uM<sup>31</sup> and this value was optimized in order to accurately recreate the nonlinear absorption of gabapentin. V<sub>max</sub> was also optimized to the oral datasets.
 
-**Table 3-2. Pharmacokinetic datasets for gabapentin oral model construction**
+**Table 3-2: Pharmacokinetic datasets for gabapentin oral model construction**
 
 | **Study**              | **Dose and administration** | **Cohort**                    | **N** | **Age (years)**<sup>a</sup> | **Weight (kg)**<sup>a</sup> |
 |------------------------|-----------------------------|-------------------------------|-------|--------------------|--------------------|

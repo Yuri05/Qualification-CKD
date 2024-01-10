@@ -8,7 +8,7 @@ In order to generate a virtual population of subjects with CKD, the user must sp
 |:-:|
 |       *Figure 2-2: Algorithm for generation of virtual individuals with CKD while accounting for the effects of aging*         |
 
-**Table 2-1. Hematocrit in Patients With Chronic Kidney Disease<sup>9, 10, 11</sup>**
+**Table 2-1: Hematocrit in Patients With Chronic Kidney Disease<sup>9, 10, 11</sup>**
 
 | **Creatinine Clearance (mL/min/1.73 m<sup>2</sup>)**    | **Men HCT (%)**  | **Women HCT (%)** |
 |---------------------------------------------------------|------------------|-------------------|
@@ -22,7 +22,7 @@ In order to generate a virtual population of subjects with CKD, the user must sp
 | Hemodialysis                                            | 31               | 29                |
 
 
-**Table 2-2. Fraction of Healthy Values (Normal Coefficient of Variation % ) in Chronic Kidney Disease Patients by Stage**
+**Table 2-2: Fraction of Healthy Values (Normal Coefficient of Variation % ) in Chronic Kidney Disease Patients by Stage**
 
 |Parameter                     |    Stage 3 (30-60 mL/min/1.73 m<sup>2</sup>)   |    Stage 4 (15-30 mL/min/1.73 m<sup>2</sup>)  |    Stage 5 (<15 mL/min/1.73 m<sup>2</sup>)   |   Dialysis   |
 | :--------------------------- | :-------------------: | :---------------------: | :--------------------------: | :-------------------------: |
